@@ -15,9 +15,9 @@ class Tests(unittest.TestCase):
             num_rows
         )
     
-    def test_0_rows(self):
-        num_cols = 12
-        num_rows = 0
+    # def test_0_rows(self):
+    #     num_cols = 12
+    #     num_rows = 0
 
 if __name__ == '__main__':
     unittest.main()

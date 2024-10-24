@@ -3,7 +3,7 @@ from maze import Maze
 
 class Main:
     def main():
-        num_rows = 0
+        num_rows = 12
         num_cols = 12
         margin = 50
         screen_x = 800
