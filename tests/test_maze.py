@@ -15,9 +15,17 @@ class Tests(unittest.TestCase):
             num_rows
         )
     
-    # def test_0_rows(self):
-    #     num_cols = 12
-    #     num_rows = 0
+    def test_0_rows(self):
+        num_cols = 12
+        num_rows = 0
+        with self.assertRaises(ValueError):
+            Maze(0, 0, num_rows, num_cols, 10, 10)
+    
+    def test_0_columns(self):
+        num_cols = 0
+        num_rows = 12
+        with self.assertRaises(ValueError):
+            Maze(0, 0, num_rows, num_cols, 10, 10)
 
 if __name__ == '__main__':
     unittest.main()

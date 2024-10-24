@@ -13,6 +13,10 @@ class Maze:
         cell_size_y,
         window=None,
     ):
+        if num_rows <= 0:
+            raise ValueError("Number of rows must be greater than zero")
+        if num_cols <=0:
+            raise ValueError("Number of columns must be greater than zero")
         self._cells = []
         self._x1 = x1
         self._y1 = y1
@@ -43,6 +47,9 @@ class Maze:
         y2 = y1 + self._cell_size_y
         self._cells[i][j].draw(x1, y1, x2, y2)
         self._animate()
+        
+    def _break_entrance_and_exit(self):
+        pass
 
     def _animate(self):
         if self._window is None:
