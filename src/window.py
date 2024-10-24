@@ -15,7 +15,7 @@ class Window:
     
     def wait_for_close(self):
         self.__running = True
-        while self.__running == True:
+        while self.__running:
             self.redraw()
             self.__root.after(50)
     
