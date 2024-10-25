@@ -4,17 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c5a4e44-c411-4924-a9ee-4e6fe17726ef" name="Changes" comment="fifth commit - pycharm config">
+    <list default="true" id="7c5a4e44-c411-4924-a9ee-4e6fe17726ef" name="Changes" comment="seventh commit - add venv">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cell.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cell.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/line.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/line.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/maze.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/maze.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_maze.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_maze.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,18 +38,24 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python tests.Python tests for test_maze.Tests.executor": "Run",
+    "Python tests.Python tests for test_maze.Tests.executor": "Debug",
     "Python tests.Python tests for test_maze.Tests.test_0_rows.executor": "Run",
     "Python tests.Python tests for test_maze.Tests.test_invalid_input_type_float.executor": "Run",
     "Python tests.Python tests for test_maze.Tests.test_maze_create_cells.executor": "Run",
+    "Python tests.Python tests in test_maze.py.executor": "Run",
     "Python tests.Python tests in tests.executor": "Run",
     "Python.test_maze.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "settings.editor.selected.configurable": "preferences.keymap"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Python"
+    ]
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for test_maze.Tests">
+  <component name="RunManager" selected="Python tests.Python tests in test_maze.py">
     <configuration name="Python tests for test_maze.Tests" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="maze_gen" />
       <option name="ENV_FILES" value="" />
@@ -56,21 +68,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_maze.Tests&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_maze.Tests.test_0_rows" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="maze_gen" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_maze.Tests.test_0_rows&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -104,6 +101,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_maze.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="maze_gen" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_maze.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests in tests" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="maze_gen" />
       <option name="ENV_FILES" value="" />
@@ -121,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in test_maze.py" />
         <item itemvalue="Python tests.Python tests for test_maze.Tests" />
         <item itemvalue="Python tests.Python tests for test_maze.Tests.test_invalid_input_type_float" />
         <item itemvalue="Python tests.Python tests for test_maze.Tests.test_maze_create_cells" />
         <item itemvalue="Python tests.Python tests in tests" />
-        <item itemvalue="Python tests.Python tests for test_maze.Tests.test_0_rows" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +173,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729780779003</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fifth commit - pycharm config">
+      <option name="closed" value="true" />
+      <created>1729860953897</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729860953897</updated>
+    </task>
+    <task id="LOCAL-00004" summary="seventh commit - add venv">
+      <option name="closed" value="true" />
+      <created>1729861078524</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729861078524</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,7 +222,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fourth commit, unittest now working with a venv setup" />
-    <MESSAGE value="fifth commit - pycharm config" />
-    <option name="LAST_COMMIT_MESSAGE" value="fifth commit - pycharm config" />
+    <MESSAGE value="sixth commit" />
+    <MESSAGE value="sixth commit" />
+    <MESSAGE value="seventh commit - add venv" />
+    <MESSAGE value="fourth commit - unittest now working with a venv setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="fourth commit - unittest now working with a venv setup" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

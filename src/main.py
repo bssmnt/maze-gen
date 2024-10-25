@@ -3,9 +3,9 @@ from maze import Maze
 
 class Main:
     def main():
-        num_rows = 12
-        num_cols = 12
-        margin = 50
+        margin = 10
+        num_rows = 10
+        num_cols = 10
         screen_x = 800
         screen_y = 600
         cell_size_x = (screen_x - 2 * margin) / num_cols

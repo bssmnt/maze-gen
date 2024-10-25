@@ -22,13 +22,13 @@ class Tests(unittest.TestCase):
     def test_0_rows(self):
         num_cols = 12
         num_rows = 0
-        with self.assertRaises(ValueError):
+        with self.assertRaises(IndexError):
             Maze(0, 0, num_rows, num_cols, 10, 10)
 
     def test_0_columns(self):
         num_cols = 0
         num_rows = 12
-        with self.assertRaises(ValueError):
+        with self.assertRaises(IndexError):
             Maze(0, 0, num_rows, num_cols, 10, 10)
 
     def test_invalid_input_type_string(self):
