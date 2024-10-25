@@ -2,7 +2,6 @@ from window import Window
 from maze import Maze
 
 class Main:
-    @staticmethod
     def main():
         num_rows = 12
         num_cols = 12

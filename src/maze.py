@@ -1,4 +1,4 @@
-from src.cell import Cell
+from cell import Cell
 import time
 
 
@@ -27,6 +27,7 @@ class Maze:
         self._window = window
 
         self._create_cells()
+        self._break_entrance_and_exit()
 
     def _create_cells(self):
         for i in range(self._num_cols):
@@ -49,7 +50,15 @@ class Maze:
         self._animate()
         
     def _break_entrance_and_exit(self):
-        pass
+        top_left = self._cells[0][0]
+        bottom_right = self._cells[-1][-1]
+        last_row_index = len(self._cells) - 1
+        last_col_index = len(self._cells[0]) - 1
+        top_left.has_top_wall = False
+        bottom_right.has_bottom_wall = False
+        self._draw_cell(0, 0)
+        self._draw_cell(last_row_index, last_col_index)
+
 
     def _animate(self):
         if self._window is None:

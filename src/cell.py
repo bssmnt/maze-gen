@@ -1,5 +1,5 @@
-from src.line import Line
-from src.point import Point
+from line import Line
+from point import Point
 
 class Cell:
     def __init__(self, window=None):
@@ -23,15 +23,27 @@ class Cell:
         if self.has_left_wall:
             line = Line(Point(self.x1, self.y1), Point(self.x1, self.y2))
             self.window.draw_line(line, fill_colour)
+        else:
+            line = Line(Point(self.x1, self.y1), Point(self.x1, self.y2))
+            self.window.draw_line(line, 'white')
         if self.has_right_wall:
             line = Line(Point(self.x2, self.y1), Point(self.x2, self.y2))
             self.window.draw_line(line, fill_colour)
+        else:
+            line = Line(Point(self.x2, self.y1), Point(self.x2, self.y2))
+            self.window.draw_line(line, 'white')
         if self.has_top_wall:
             line = Line(Point(self.x1, self.y1), Point(self.x2, self.y1))
             self.window.draw_line(line, fill_colour)
+        else:
+            line = Line(Point(self.x1, self.y1), Point(self.x2, self.y1))
+            self.window.draw_line(line, 'white')
         if self.has_bottom_wall:
             line = Line(Point(self.x1, self.y2), Point(self.x2, self.y2))
             self.window.draw_line(line, fill_colour)
+        else:
+            line = Line(Point(self.x1, self.y2), Point(self.x2, self.y2))
+            self.window.draw_line(line, 'white')
         
     def draw_move(self, to_cell, undo=False):
         if not undo:
