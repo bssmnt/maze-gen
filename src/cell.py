@@ -47,17 +47,19 @@ class Cell:
             self.window.draw_line(line, 'white')
         
     def draw_move(self, to_cell, undo=False):
+        if self.window is None:
+            return
+
         if not undo:
-            line_colour = "red"
-        else:
             line_colour = "grey"
+        else:
+            line_colour = "red"
         
         center_x = ((self.x1 + self.x2) // 2)
         center_y = ((self.y1 + self.y2) // 2)
         center_x_to_cell = ((to_cell.x1 + to_cell.x2) // 2)
         center_y_to_cell= ((to_cell.y1 + to_cell.y2) // 2)
 
-        start = (center_x, center_y)
-        end = (center_x_to_cell, center_y_to_cell)
+        line = Line(Point(center_x, center_y), Point(center_x_to_cell, center_y_to_cell))
 
-        self.window.draw_line(start, end, line_colour)
+        self.window.draw_line(line, line_colour)
